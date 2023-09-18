@@ -1,0 +1,37 @@
+{% load static%}
+<!DOCTYPE html>
+
+<style>
+    #bg {
+        height: 100%;
+        background-position-x: center;
+        background-repeat: no-repeat;
+    }
+
+    .timerBox{
+        height: 100px;
+        width: 30%;
+        margin-left: 57%;
+        margin-top: 300px;
+        padding-top: 10px;
+        border-radius: 20px;
+        background-color: rgb(249,243,235);
+        text-align: center;
+        opacity: 0.89;
+        font-family: Arial;
+        font-weight: light;
+        color: rgb(227,195,159);
+    }
+
+    .time{
+
+    }
+</style>
+<head>
+    <title>Pomodoro Timer</title>
+</head>
+<body id = "bg" style = "background-image: url('{% static "images\Coffee_Website.png"%}');">
+    <div class = "timerBox"> <!-- overall pomodoro box -->
+        <h1>Pomodoro Timer</h1>
+    </div>
+</body> 
