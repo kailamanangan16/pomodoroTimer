@@ -1,68 +1,5 @@
 <!DOCTYPE html>
 <html>
-    <style>
-        #bg {
-            height: 100%;
-            background-position-x: center;
-            background-repeat: no-repeat;
-        }
-
-        .timerBox{
-            height: 255px;
-            width: 30%;
-            margin-left: 57%;
-            margin-top: 300px;
-            padding-top: 10px;
-            border-radius: 20px;
-            background-color: rgb(249,243,235);
-            text-align: center;
-            font-family: Verdana;
-            font-weight: light;
-            color: rgb(227,195,159);
-        }
-
-        .time{
-            font-size: 100px;
-            text-align: center;
-            font-family: Verdana;
-            font-weight: light;
-            color: rgb(227,195,159);
-        }
-
-        .buttonArea{
-            height: 50px;
-            width: 100%;
-            border-bottom-left-radius: 20px;
-            border-bottom-right-radius: 20px;
-            background-color: White;
-            text-align: center;
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-        }
-
-        .button{
-            font-family: Verdana;
-            font-weight: light;
-            color: rgb(227,195,159);
-            font-size: 20px;
-            display: inline-block;
-            background-color: White;
-            border: none;
-            padding-top: 5px;
-        }
-
-        .foot {
-            margin-top: 300px;
-            height: 140px;
-            width: 100%;
-            background-color: rgb(236,212,185);
-            color: White;
-            font-family: Verdana;
-            font-size: 15px;
-            text-align: center;
-            padding-top: 3px;
-        }
-    </style>
     <head>
         {% load static%}
         <title>Pomodoro Timer</title>
@@ -70,21 +7,22 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content=
           "width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{% static 'home.css'%}">
     </head>
     <body id = "bg" style = "background-image: url('{% static "images\Coffee_Website.png"%}');">
         <div class = "timerBox"> <!-- overall pomodoro box -->
             <h1>Pomodoro Timer</h1>
             <div class = "time" id = "time">25:00</div>
             <div class = "buttonArea">
-                <button class = "button" id = "start">Start</button>
+                <button class = "button" id = "start" style = "border-bottom-left-radius: 20px">Start</button>
                 <button class = "button" id = "stop">Stop</button>
-                <button class = "button" id = "reset">Reset</button>
+                <button class = "button" id = "reset" style = "border-bottom-right-radius: 20px">Reset</button>
             </div>
         </div>
 
         <footer class = "foot">
             <h2>What is Pomodoro?</h2>
-            <p>A method of time management that utilizes 25 minute work intervals with 5 minute breaks. Each session is considered a "pomodoro" cycle. After 4 cycles, take a 10 minute break, and repeat the process. Good luck!</p>
+            <p>A method of time management that utilizes a 25 minute work interval with a 5 minute break. Each session is considered a "pomodoro" cycle. After 4 cycles, take a 10 minute break, and repeat the process. Good luck!</p>
             <p>Art & UI Design by Kaila Manangan</p>
         </footer>
 

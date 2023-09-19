@@ -1,0 +1,65 @@
+#bg {
+    height: 100%;
+    background-position-x: center;
+    background-repeat: no-repeat;
+}
+
+.timerBox{
+    height: 255px;
+    width: 30%;
+    margin-left: 57%;
+    margin-top: 350px;
+    padding-top: 10px;
+    border-radius: 20px;
+    background-color: rgb(249,243,235);
+    text-align: center;
+    font-family: Verdana;
+    color: rgb(227,195,159);
+}
+
+.time{
+    font-size: 100px;
+    text-align: center;
+    font-family: Verdana;
+    color: rgb(227,195,159);
+}
+
+.buttonArea{
+    height: 50px;
+    width: 100%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: White;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.button{
+    font-family: Verdana;
+    color: rgb(227,195,159);
+    font-size: 20px;
+    display: inline-block;
+    background-color: White;
+    border: none;
+    padding-top: 5px;
+    transition: 0.5s;
+}
+
+.button:hover{
+    color: White;
+    background-color: rgb(227,195,159);
+}
+
+
+.foot {
+    margin-top: 300px;
+    height: 140px;
+    width: 100%;
+    background-color: rgb(236,212,185);
+    color: White;
+    font-family: Verdana;
+    font-size: 15px;
+    text-align: center;
+    padding-top: 3px;
+}
